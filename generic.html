@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Experience</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #ff9f55;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px; /* Center the line */
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: -30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: -30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .content h4 {
+            margin-top: 0;
+        }
+
+        .content ul {
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            list-style-type: disc;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .left::after, .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Projects</a></li>
+            <li class="active"><a href="generic.html">Experience</a></li>
+            <li><a href="elements.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+        <!-- <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram"></span></a></li>
+            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub"></span></a></li>
+        </ul> -->
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <h1>My Experience</h1>
+            </header>
+
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h4>Kdex Global, TX - Data Analyst</h4>
+                        <p><em>Feb 2024 - Present</em></p>
+                        <p>Skills: Python, Advanced SQL, R, PowerBI, Tableau, SAS, Cloud Platforms (GCP, AWS, Azure), Machine Learning (Logistic Regression, Random Forest, Gradient Boosting, SVM), Statistical Analysis</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container right">
+                    <div class="content">
+                        <h4>Kdex Global, TX - Data Analyst Intern</h4>
+                        <p><em>Jun 2023 - Dec 2023</em></p>
+                        <p>Skills: SQL, Python, Tableau, PowerBI, Machine Learning (Logistic Regression, Random Forest, XGBoost, Sentiment Analysis), Feature Engineering, Data Analysis</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container left">
+                    <div class="content">
+                        <h4>Idea Bytes, Hyderabad, India - Data Science Intern</h4>
+                        <p><em>Jan 2020 - May 2021</em></p>
+                        <p>Skills: SQL, Python, Tableau, ETL, Data Warehousing, Data Blending, Data Preparation, Advanced Analytics (Snowflake), Kubernetes, Alteryx</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer
+    <footer id="footer">
+        <section>
+            <form method="post" action="#">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" /></li>
+                </ul>
+            </form>
+        </section>
+        <section class="split contact">
+            <section class="alt">
+                <h3>Address</h3>
+                <p>1234 Somewhere Road #87257<br />
+                    Nashville, TN 00000-0000</p>
+            </section>
+            <section>
+                <h3>Phone</h3>
+                <p><a href="#">(000) 000-0000</a></p>
+            </section>
+            <section>
+                <h3>Email</h3>
+                <p><a href="#">info@untitled.tld</a></p>
+            </section>
+            <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul><li>&copy; Krishna Margali Goparapu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
